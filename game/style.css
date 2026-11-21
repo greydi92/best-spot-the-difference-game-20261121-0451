@@ -1,0 +1,45 @@
+/* Twin Glance — Spot the Difference: page chrome around the canvas.
+   The game itself draws everything on the canvas; this file only
+   centres it on a dark page and keeps it readable at any window size. */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #141c24;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.stage {
+  width: min(1280px, 100vw);
+  padding: 12px 12px 24px;
+}
+
+#game {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+  cursor: default;
+  background: #1d2733;
+}
+
+.footnote {
+  margin: 12px 4px 0;
+  color: #9fb0ba;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
